@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: rgba(124, 1, 1, 0.938);
+    overflow-x: hidden; /* Empêche le défilement horizontal si un élément dépasse */
+}
+
+.header {
+    height: 90vh;
+    background-image: url(background.jpg);
+    background-color: rgba(92, 92, 92, 0.938);
+    background-size: cover;
+}
+
+.logo {
+    width: 6vh; /* Proportionnel à la hauteur de l'écran */
+    height: 6vh;
+    border-radius: 100%;
+    margin: 1vh;
+}
+
+.navbar {
+    padding-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vh; /* Texte qui s'adapte à la hauteur */
+    gap: 12vw;     /* Espace proportionnel à la largeur */
+    background-color: rgb(43, 43, 43);
+    
+}
+
+a {
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+}
+
+p, h1 {
+    color: white;
+}
+
+h1 {
+    font-family: serif;
+    font-size: 8vh;
+}
+
+p {
+    font-size: 3vh;
+    letter-spacing: 0.5vw;
+}
+
+h3{
+    font-size: 6vh;
+    letter-spacing: 0.5vw;
+    color: rgb(128, 2, 2);
+}
+
+.main-title {
+    text-align: center;
+    margin-top: 50vh;
+}
+
+.subtitle {
+    margin-top: 2vh;
+    color: yellow;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(24, 0, 0);
+    border: 4px solid rgb(145, 145, 145);
+    padding: 4vh;
+    gap: 5vh;
+    margin-right: 2vw; 
+    width: 40vw;
+    height: auto;
+}
+
+.attaque{
+    width: 30vw;
+    height: auto;
+}
+
+.cards-container {
+    margin-top: 20vh; /* 700px approx */
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20vh;
+}
+
+.card:hover {
+    border: 4px solid rgb(0, 0, 0);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    margin-bottom: 20vh;
+}
+
+/* --- SECTIONS AVEC POSITIONNEMENT COMPLEXE --- */
+
+.a1 {
+    margin-right: -10vw;
+    margin-left: 60vw; /* Équivalent adaptatif de 1000px */
+}
+
+.photo {
+    width: 30vw;  /* Environ 460px sur un écran standard */
+    height: auto;
+    margin-left: 70vw; /* Équivalent adaptatif de 1300px */
+    margin-top: -67.5vh;
+}
+
+.hate {
+    width: 60vw;            /* L'image prend 40% de la largeur de l'écran */
+    height: auto;           /* Garde les proportions */
+    border-radius: 10px;
+    margin-top: 20vh;
+}
+
+.hatespeech {
+    flex: 1;                /* Le texte prend la place restante */
+    max-width: 40vw;
+    margin-left: 61vw;
+    margin-top: -40vw;
+}
+
+.hell {
+    width: 60vw;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 40vw;
+    margin-top: -90vh;
+}
+
+.hellspeech {
+    flex: 1;
+    max-width: 40vw;
+    margin-top: 20vh;
+    margin-left: 1vw;
+}
